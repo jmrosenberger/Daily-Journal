@@ -1,0 +1,14 @@
+.entryForm
+fieldset
+ label {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    color: green;
+}
+
+h1 {
+    color: navy;
+}

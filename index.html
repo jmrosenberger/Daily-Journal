@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Daily Journal</h1>
+        <h4>Joshua Rosenberger</h4>
+
+    </header>
+
+    <main id="container">
+        <section>
+            <h2>Daily Input</h2>
+            <form class="entryForm">
+                <fieldset>
+                    <label for="entryDate">Date:</label>
+                    <input type="date" name="entryDate" class="entryForm__date">
+                </fieldset>
+                <fieldset>
+                    <label for="conceptsCovered">Concepts Covered</label>
+                    <input type="text" name="conceptsCovered" class="conceptsCoveredForm__input">
+                </fieldset>
+                <fieldset>
+                    <label for="journalEntry">Journal Entry</label>
+                    <input type="textArea" name="journalEntry" class="journalEntryForm__input">
+                </fieldset>
+                <fieldset>
+                    <label for="mood">Mood for the day</label>
+                    <select name="mood" id="mood">
+                        <option value="Happy">Happy</option>
+                        <option value="Frustrated">Frustrated</option>
+                        <option value="Confused">Confused</option>
+                        <option value="Satisfied">Satisfied</option>
+                        <option value="Overwhelmed">Overwhelmed</option>
+                        <option value="Eager">Eager</option>
+                    </select>
+                </fieldset>
+                <input type="button" onclick="alert('Keep up the good work!')" value="Record Journal Entry">
+            </form>
+
+        </section>
+        <article id="entries">
+            
+        </article>
+
+    </main>
+    
+    <footer>
+        <h6>Joshua Rosenberger</h6>
+        <h6><a href="https://github.com/jmrosenberger">github.com/jmrosenberger</a></h6>
+        <h6>Copyright</h6>
+        
+    </footer>
+    
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+
+</html>
