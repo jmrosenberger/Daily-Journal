@@ -7,15 +7,16 @@ import { getEntries } from "./database.js"
 
 export const Entries = () => {
     const entries = getEntries()
-    const allEntriesAsHTML = "<section>"
+    let allEntriesAsHTML = "<ul>"
 
 
     for (const entry of entries) {
         allEntriesAsHTML += `
-                <p>${entry.entry}Test entry</p>
+                <li>${entry.entry}<br>
+                ${entry.date}</li>
                 `
     }
-    allEntriesAsHTML += "</section>"
+    allEntriesAsHTML += "</ul>"
 
     return allEntriesAsHTML
 }

@@ -39,6 +39,6 @@ const database = {
     raw data in the format that you want
 */
 export const getEntries = () => {
-    return database.entries.map(entry => ({ ...entry }))
-    
+    const copyOfData = database.entries.map(entry => ({ ...entry }))
+    return copyOfData
 }
