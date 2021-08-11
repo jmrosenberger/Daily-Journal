@@ -1,5 +1,4 @@
-// import { DailyJournal } from "./DailyJournal.js"
-// import { Entries } from "./Entries.js"
+
 
 
 
@@ -7,7 +6,7 @@
 
 export const JournalForm = () => {
     return `
-<h2>Daily Input</h2>
+            <h2>Daily Input</h2>
             <form class="entryForm">
                 <fieldset>
                     <label for="entryDate">Date:</label>

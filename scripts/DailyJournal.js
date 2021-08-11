@@ -1,24 +1,26 @@
 import { Entries } from "./Entries.js"
 import { JournalForm } from "./JournalForm.js"
-// export const DailyJournal = () => {
-//     return `
-//         <div class="entryList">
-//             ${Entries()}
-//         </div>
-//     `
-// }
 
-// Keep your existing imports and add the new import for the form function
+
+
+
+
+
 
 export const DailyJournal = () => {
     return `
-        <h1>Journal Entries</h1>
-        <article class="entryForm">
-        ${ JournalForm() }
-        </article>
+    <header>
+        <h1>My Daily Journal</h1>
+        <h4>Joshua Rosenberger</h4>
 
+    </header>
+    <article class="entryForm">
+    ${JournalForm()}
+    </article>
+    
+    <h1>Journal Entries</h1>
         <div class="entryList">
-            ${ Entries() }
+            ${Entries()}
         </div>
 
     `

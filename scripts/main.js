@@ -1,7 +1,7 @@
 import { DailyJournal } from "./DailyJournal.js"
 
 
-const container = document.querySelector("#entries")
+const container = document.querySelector("#container")
 
 
 export const renderAllHTML = () => {
