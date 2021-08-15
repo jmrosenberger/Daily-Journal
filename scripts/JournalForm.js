@@ -1,11 +1,33 @@
+import { sendEntry } from "./database.js"
 
 
 
 
+const mainContainer = document.querySelector("#container")
+
+
+mainContainer.addEventListener("click", clickEvent => {
+    if (clickEvent.target.id === "submitEntry") {
+        const userDate = document.querySelector("input[name='entryDate']").value
+        const userConceptsCovered = document.querySelector("input[name='conceptsCovered']").value
+        const userjournalEntry = document.querySelector("input[name='journalEntry']").value
+        const userMood = document.querySelector("select[name='mood']").value
+
+
+        const dataToSendToAPI = {
+            date: userDate,
+            concept: userConceptsCovered,
+            entry: userjournalEntry,
+            mood: userMood
+        }
+        sendEntry(dataToSendToAPI)
+    }
+}
+)
 
 
 export const JournalForm = () => {
-    return `
+    let html = `
             <h2>Daily Input</h2>
             <form class="entryForm">
                 <fieldset>
@@ -31,7 +53,8 @@ export const JournalForm = () => {
                         <option value="Eager">Eager</option>
                     </select>
                 </fieldset>
-                <input type="button" onclick="alert('Keep up the good work!')" value="Record Journal Entry">
-            </form>
+                </form>
+                <button class="button" id="submitEntry">Record Journal Entry</button>
         `
+        return html
 }

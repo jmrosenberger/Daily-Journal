@@ -1,27 +1,25 @@
 {
-    "entries": [
-        {
-            "id": 1,
-            "date": "07/24/2025",
-            "concept": "HTML & CSS",
-            "entry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
-            "mood": "Eager"
-        },
-        {
-            "id": 2,
-            "date": "07/26/2025",
-            "concept": "Complex Flexbox",
-            "entry": "I tried to have an element in my Flexbox layout also be another Flexbox layout. It hurt my brain.",
-            "mood": "Frustrated"
-        },
-        {
-            "id": 3,
-            "date": "07/27/2025",
-            "concept": "git and github",
-            "entry": "Felt pretty confused the first time trying to understand how to navigate git and github by using the terminal.",
-            "mood": "Confused"
-        }
-
-
-    ]
+  "entries": [
+    {
+      "id": 1,
+      "date": "07/24/2025",
+      "concept": "HTML & CSS",
+      "entry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
+      "mood": "Eager"
+    },
+    {
+      "id": 2,
+      "date": "07/26/2025",
+      "concept": "Complex Flexbox",
+      "entry": "I tried to have an element in my Flexbox layout also be another Flexbox layout. It hurt my brain.",
+      "mood": "Frustrated"
+    },
+    {
+      "date": "2021-08-15",
+      "concept": "API's / JSON",
+      "entry": "Been working on this Daily Journal project, trying to get the \"Record Journal Entry\" button to submit a new journal entry. Finally got it working.",
+      "mood": "Happy",
+      "id": 3
+    }
+  ]
 }
